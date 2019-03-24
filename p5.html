@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		#busuanzi_value_site_pv{
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+
+ 	<span id="busuanzi_container_site_pv">我与百万富翁之间的距离: <span id="busuanzi_value_site_pv"></span>米</span>
+
+
+ 	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	<script src="https://cdn.bootcss.com/p5.js/0.7.3/p5.min.js"></script>
+	<script>
+		function setup() {
+		  createCanvas(3000, 3000);
+		}
+
+		function draw() {
+		  if (mouseIsPressed) {
+		    fill(0);
+		  } else {
+		    fill(255);
+		  }
+		  ellipse(mouseX, mouseY, 80, 80);
+		}
+	</script>
+</body>
+</html>
